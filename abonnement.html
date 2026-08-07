@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Recevoir les annonces — Le Phare</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="app.webmanifest">
+<meta name="theme-color" content="#1a1a1a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Le Phare">
+<link rel="icon" href="icons/favicon.ico">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<script src="app.js" defer></script>
+<style>
+  .form-field { margin-bottom: 16px; }
+  .form-field label { display: block; font-family: var(--sans); font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--grey); margin-bottom: 5px; }
+  .form-field input {
+    width: 100%;
+    font-family: var(--sans);
+    font-size: 15px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    color: var(--ink);
+  }
+  .form-field input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .consent-row { display: flex; align-items: flex-start; gap: 10px; margin: 20px 0; }
+  .consent-row input { margin-top: 4px; }
+  .consent-row label { font-family: var(--sans); font-size: 13.5px; color: #333; line-height: 1.5; }
+  .submit-btn {
+    font-family: var(--sans);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .submit-btn:hover { background: #872019; }
+  .unsub-form { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 10px; }
+  .unsub-form input[type=email] {
+    flex: 1;
+    min-width: 200px;
+    font-family: var(--sans);
+    font-size: 14px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .unsub-form button {
+    font-family: var(--sans);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: transparent;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .unsub-form button:hover { background: var(--ink); color: #fff; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="kicker-row">
+      <span>Édition du vendredi 7 août 2026</span>
+      <span>Rédaction entièrement automatisée</span>
+    </div>
+    <h1><a href="index.html">LE PHARE</a></h1>
+    <p class="baseline">Un regard synthétique sur l'actualité</p>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="wrap">
+    <ul>
+      <li><a href="index.html">La Une</a></li>
+      <li><a href="international.html">International</a></li>
+      <li><a href="france.html">Politique intérieure</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="archives.html">Archives</a></li>
+      <li><a href="science.html">Science</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="bottom-nav">
+  <div class="wrap">
+    <a href="index.html">La Une</a>
+    <a href="international.html">Intl.</a>
+    <a href="france.html">France</a>
+    <a href="culture.html">Culture</a>
+    <a href="science.html">Science</a>
+    <a href="archives.html">Archives</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <span class="section-title accent">Recevoir les annonces du Phare</span>
+
+  <article class="article">
+    <p class="dek">Merci de lire Le Phare. Inscrivez-vous pour recevoir nos annonces — offres particulières, évolutions à venir du site et autres nouveautés — directement par email.</p>
+  </article>
+
+  <article class="article">
+    <h3>Formulaire d'inscription</h3>
+    <form action="https://lephare-stats.167.233.247.14.sslip.io/subscribe" method="post">
+      <div class="form-field">
+        <label for="first_name">Prénom</label>
+        <input type="text" id="first_name" name="first_name" required>
+      </div>
+      <div class="form-field">
+        <label for="last_name">Nom</label>
+        <input type="text" id="last_name" name="last_name" required>
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-field">
+        <label for="phone">Téléphone (facultatif)</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="consent-row">
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">J'accepte de recevoir par email les annonces du Phare (offres particulières, évolutions du site). Je peux me désinscrire à tout moment via le formulaire ci-dessous.</label>
+      </div>
+      <button type="submit" class="submit-btn">S'inscrire</button>
+    </form>
+    <p class="sources" style="margin-top:20px;">Les informations transmises via ce formulaire (prénom, nom, email, téléphone si renseigné) sont utilisées exclusivement pour l'envoi des annonces du Phare. Elles ne sont ni vendues, ni partagées avec des tiers, et sont conservées tant que vous restez abonné.</p>
+  </article>
+
+  <article class="article">
+    <h3>Se désinscrire</h3>
+    <p class="dek">Retirez votre adresse de la liste à tout moment, sans justification.</p>
+    <form class="unsub-form" action="https://lephare-stats.167.233.247.14.sslip.io/unsubscribe" method="post">
+      <input type="email" name="email" placeholder="Votre adresse email" required>
+      <button type="submit">Se désinscrire</button>
+    </form>
+  </article>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Le Phare</strong> — articles entièrement rédigés par une intelligence artificielle (Claude, Anthropic) à partir de sources publiques. À recouper avec la presse professionnelle. Ce site mesure sa fréquentation (adresse IP, localisation approximative, page consultée) à des fins statistiques internes ; ces données ne sont ni publiées, ni partagées avec des tiers hormis le service de géolocalisation utilisé pour situer les visites sur une carte.</p>
+    <p class="install-link"><a href="installer.html">Installer Le Phare sur votre téléphone</a></p>
+  </div>
+</footer>
+
+<img src="https://lephare-stats.167.233.247.14.sslip.io/collect.gif?page=abonnement" width="1" height="1" style="position:absolute;visibility:hidden" alt="" loading="eager">
+</body>
+</html>

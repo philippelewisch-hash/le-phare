@@ -101,13 +101,18 @@ Juste après `</nav>` (la nav du haut) sur ces mêmes 6 pages, conserver la barr
 </nav>
 ```
 
-Et dans le `<footer>` de ces 6 pages, juste après le paragraphe de transparence, conserver :
+Et dans le `<footer>` de ces 6 pages, juste après le paragraphe de transparence, conserver ces deux liens :
 
 ```html
 <p class="install-link"><a href="installer.html">Installer Le Phare sur votre téléphone</a></p>
+<p class="install-link"><a href="abonnement.html">Recevoir les annonces du Phare (offres, nouveautés)</a></p>
 ```
 
 Ces éléments ne s'appliquent PAS aux pages archivées dans `editions/YYYY-MM-DD/` (elles restent de simples pages web, sans balises PWA).
+
+### 7bis. Page `abonnement.html` et service d'inscription
+
+Le fichier `abonnement.html` (formulaire d'inscription aux annonces, avec désinscription) est une page statique fixe : ne jamais la régénérer ni la modifier automatiquement. Le formulaire poste vers `https://lephare-stats.167.233.247.14.sslip.io/subscribe` (service externe, hors de ce dépôt) — ne pas toucher à cette URL.
 
 ### 8. Pixel de mesure d'audience (à inclure sur CHAQUE page, racine et édition archivée)
 
@@ -125,7 +130,7 @@ où `SLUG` vaut `accueil` (pour `index.html`), `international`, `france`, `cultu
 - Le contenu des dossiers `editions/` des jours précédents (ils sont figés définitivement)
 - Ce fichier `GENERATION-GUIDE.md`
 - L'URL du pixel de mesure d'audience
-- Les fichiers `app.webmanifest`, `sw.js`, `app.js`, `installer.html`, et le dossier `icons/`
+- Les fichiers `app.webmanifest`, `sw.js`, `app.js`, `installer.html`, `abonnement.html`, et le dossier `icons/`
 
 ### 10. Publier
 
