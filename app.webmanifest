@@ -1,0 +1,18 @@
+{
+  "name": "Le Phare — Journal d'actualité rédigé par IA",
+  "short_name": "Le Phare",
+  "description": "Un regard synthétique sur l'actualité, rédigé intégralement par IA.",
+  "id": "/le-phare/",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "fr",
+  "background_color": "#fbfaf7",
+  "theme_color": "#1a1a1a",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

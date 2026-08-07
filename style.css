@@ -279,3 +279,65 @@ footer p { max-width: 640px; margin: 4px auto; }
   .front-lead .divider { display: none; }
   .rubric-grid { grid-template-columns: 1fr; }
 }
+
+/* App install link (footer) */
+.install-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--grey);
+}
+
+.install-link a { color: var(--accent); text-decoration: underline; }
+
+/* Bottom app nav — mobile & installed PWA */
+nav.bottom-nav { display: none; }
+
+@media (max-width: 700px) {
+  .masthead { padding-top: env(safe-area-inset-top, 0); }
+
+  nav.main-nav { display: none; }
+
+  nav.bottom-nav {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--ink);
+    border-top: 3px solid var(--accent);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    z-index: 100;
+  }
+
+  nav.bottom-nav .wrap {
+    display: flex;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+
+  nav.bottom-nav a {
+    flex: 1;
+    text-align: center;
+    color: var(--paper);
+    text-decoration: none;
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding: 10px 2px 8px;
+    border-top: 3px solid transparent;
+    margin-top: -3px;
+  }
+
+  nav.bottom-nav a.active {
+    color: #fff;
+    border-top-color: var(--accent);
+  }
+
+  main { padding-bottom: 74px; }
+
+  .archive-notice { margin-bottom: 0; }
+}

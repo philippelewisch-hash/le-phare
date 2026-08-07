@@ -70,7 +70,46 @@ Reconstruire entièrement le bloc entre `<!-- EDITIONS-LIST-START -->` et `<!-- 
 </div>
 ```
 
-### 7. Pixel de mesure d'audience (à inclure sur CHAQUE page, racine et édition archivée)
+### 7. Éléments d'application mobile (PWA) — à préserver sur CHAQUE page racine
+
+Le site est installable comme application sur téléphone (PWA). Sur les 6 pages racine (`index.html`, `international.html`, `france.html`, `culture.html`, `science.html`, `archives.html`), le `<head>` doit toujours contenir, en plus du `<title>` et du lien vers `style.css` :
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<link rel="manifest" href="app.webmanifest">
+<meta name="theme-color" content="#1a1a1a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Le Phare">
+<link rel="icon" href="icons/favicon.ico">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<script src="app.js" defer></script>
+```
+
+Juste après `</nav>` (la nav du haut) sur ces mêmes 6 pages, conserver la barre de navigation basse mobile, avec `class="active"` sur le lien de la page courante :
+
+```html
+<nav class="bottom-nav">
+  <div class="wrap">
+    <a href="index.html">La Une</a>
+    <a href="international.html">Intl.</a>
+    <a href="france.html">France</a>
+    <a href="culture.html">Culture</a>
+    <a href="science.html">Science</a>
+    <a href="archives.html">Archives</a>
+  </div>
+</nav>
+```
+
+Et dans le `<footer>` de ces 6 pages, juste après le paragraphe de transparence, conserver :
+
+```html
+<p class="install-link"><a href="installer.html">Installer Le Phare sur votre téléphone</a></p>
+```
+
+Ces éléments ne s'appliquent PAS aux pages archivées dans `editions/YYYY-MM-DD/` (elles restent de simples pages web, sans balises PWA).
+
+### 8. Pixel de mesure d'audience (à inclure sur CHAQUE page, racine et édition archivée)
 
 Juste avant `</body>`, sur chacune des 5 pages racine et des 5 pages de `editions/YYYY-MM-DD/`, insérer :
 
@@ -80,14 +119,15 @@ Juste avant `</body>`, sur chacune des 5 pages racine et des 5 pages de `edition
 
 où `SLUG` vaut `accueil` (pour `index.html`), `international`, `france`, `culture`, `science` ou `archives` selon la page. Ne pas modifier cette URL. Vérifier aussi que le pied de page de chaque page racine et de `archives.html` contient bien la phrase : « Ce site mesure sa fréquentation (adresse IP, localisation approximative, page consultée) à des fins statistiques internes ; ces données ne sont ni publiées, ni partagées avec des tiers hormis le service de géolocalisation utilisé pour situer les visites sur une carte. » — si elle manque, l'ajouter à la fin du dernier paragraphe du `<footer>`.
 
-### 8. Ne jamais toucher
+### 9. Ne jamais toucher
 
 - `style.css` (sauf si une nouvelle classe est strictement nécessaire — dans ce cas l'ajouter sans casser l'existant)
 - Le contenu des dossiers `editions/` des jours précédents (ils sont figés définitivement)
 - Ce fichier `GENERATION-GUIDE.md`
 - L'URL du pixel de mesure d'audience
+- Les fichiers `app.webmanifest`, `sw.js`, `app.js`, `installer.html`, et le dossier `icons/`
 
-### 9. Publier
+### 10. Publier
 
 ```
 git add -A
