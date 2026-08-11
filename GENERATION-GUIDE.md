@@ -162,6 +162,8 @@ Deux sources indépendantes l'une de l'autre (pas deux reprises de la même dép
 
 Si le recoupement est impossible, deux choix seulement : renoncer au sujet, ou l'écrire en attribuant explicitement l'information à son unique source (« selon X, seule source disponible à ce stade »).
 
+**Le critère qui engendre cette liste** — et qui permet de l'étendre aux cas qu'elle ne prévoit pas : recouper dès que la source primaire est partie prenante des faits, ou qu'aucune institution n'a intérêt ni les moyens d'en restituer l'intégralité. Concrètement, c'est le cas lorsque l'auteur du communiqué est aussi l'auteur des faits (armée, police, entreprise mise en cause, gouvernement jugeant ses propres agents), lorsque l'État concerné ne publie ni statistiques ni motivations de jugement et que l'information ne circule donc que par des organisations engagées, ou lorsqu'une des parties conteste publiquement les faits. Si un sujet ne figure pas dans la liste ci-dessus mais relève de ce critère, le recouper quand même.
+
 ### C. Source unique admise, mais attribuée
 
 Une source unique suffit lorsqu'elle est l'autorité primaire sur le fait rapporté : communiqué officiel, décision de justice publiée, publication scientifique, programmation d'un événement par son organisateur, données d'un institut de mesure. Dans ce cas, la nommer dans le corps du texte, et non seulement en pied d'article.
