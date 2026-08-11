@@ -26,6 +26,8 @@ Rédiger 2 à 4 articles originaux par rubrique (reformulation dans ses propres 
 
 Ton journalistique, factuel, neutre. Pas de sensationnalisme. Si une info est incertaine ou controversée, le signaler.
 
+**Avant de rédiger, appliquer impérativement la règle de vérification des sources décrite en fin de document.**
+
 ### 3. Créer le dossier d'archive du jour
 
 Créer `editions/YYYY-MM-DD/` contenant 5 fichiers : `index.html`, `international.html`, `france.html`, `culture.html`, `science.html`.
@@ -139,6 +141,46 @@ git add -A
 git commit -m "Édition du <date>"
 git push
 ```
+
+## Règle de vérification des sources
+
+Cette règle a été ajoutée après une erreur réelle : un article publié le 11 août 2026 sur l'exécution de Marzieh Nieri en Iran omettait que son mari avait été tué durant l'altercation et qu'elle avait été condamnée pour meurtre. Rien n'était faux ; un élément essentiel manquait. L'article avait été rédigé à partir du seul résumé d'un moteur de recherche, sans que la source soit ouverte. Les règles ci-dessous visent ce type de défaillance.
+
+### A. Ne jamais rédiger depuis un résumé seul
+
+Un extrait de résultat de recherche ne suffit jamais à écrire un article. Pour chaque article, **ouvrir au moins une source réelle** (outil de récupération de page) et rédiger à partir de son contenu. Le résumé d'un moteur sert à repérer un sujet, pas à le traiter.
+
+### B. Recoupement obligatoire — deux sources indépendantes
+
+Deux sources indépendantes l'une de l'autre (pas deux reprises de la même dépêche) sont exigées pour :
+
+- toute affaire judiciaire ou pénale, toute condamnation, toute personne nommément mise en cause
+- tout bilan humain : morts, blessés, disparus, personnes déplacées
+- toute accusation portée contre une personne, une organisation ou un État
+- tout chiffre présenté comme un record, une statistique ou une évolution
+- toute information concernant une personne privée
+
+Si le recoupement est impossible, deux choix seulement : renoncer au sujet, ou l'écrire en attribuant explicitement l'information à son unique source (« selon X, seule source disponible à ce stade »).
+
+### C. Source unique admise, mais attribuée
+
+Une source unique suffit lorsqu'elle est l'autorité primaire sur le fait rapporté : communiqué officiel, décision de justice publiée, publication scientifique, programmation d'un événement par son organisateur, données d'un institut de mesure. Dans ce cas, la nommer dans le corps du texte, et non seulement en pied d'article.
+
+### D. Signaler les divergences plutôt que trancher
+
+Lorsque deux sources donnent des versions ou des chiffres différents, **ne jamais choisir silencieusement la plus commode**. Exposer l'écart dans le texte et indiquer qui affirme quoi.
+
+### E. Qualifier les sources engagées
+
+Les organisations militantes, partis, gouvernements et groupes d'opposition peuvent être cités, mais leur nature doit être précisée au lecteur (« organisation liée à l'opposition en exil », « selon le ministère »). Ne jamais présenter leurs chiffres comme neutres.
+
+### F. Chercher ce qui manque, pas seulement ce qui est faux
+
+Avant de publier un article, se poser explicitement la question : *que s'est-il passé d'autre dans cette affaire que mon texte ne dit pas ?* Un récit cohérent et sourcé peut induire gravement en erreur par omission. C'est le cas le plus difficile à détecter et le plus fréquent.
+
+### G. Corriger à visage découvert
+
+Si une erreur est constatée après publication, ne jamais réécrire silencieusement. Corriger le texte et ajouter en tête d'article une mention datée précisant ce qui était erroné ou manquant, et ce qui a été modifié. Cette mention reste dans l'édition archivée.
 
 ## Ton, déontologie, transparence
 
