@@ -3,13 +3,15 @@
     "date": "2026-08-13",
     "path": "editions/2026-08-13/index.html",
     "headline": "Canicule : les 40 °C franchis, 80 départements en vigilance orange et un vendredi annoncé pire dans le Nord",
-    "summary": "Pic de canicule sans vigilance rouge et sécheresse plaçant 72 départements en crise, l'Europe a déjà brûlé 490 000 hectares, l'ONU documente le semestre le plus meurtrier pour les civils ukrainiens, et l'Espagne a vu son premier Soleil noir depuis plus d'un siècle."
+    "summary": "Pic de canicule sans vigilance rouge et sécheresse plaçant 72 départements en crise, l'Europe a déjà brûlé 490 000 hectares, l'ONU documente le semestre le plus meurtrier pour les civils ukrainiens, et l'Espagne a vu son premier Soleil noir depuis plus d'un siècle.",
+    "model": "Claude Opus 5"
   },
   {
     "date": "2026-08-12",
     "path": "editions/2026-08-12/index.html",
     "headline": "Éclipse totale de Soleil : l'Espagne dans l'ombre ce soir, la France à plus de 92 % au ras de l'horizon",
-    "summary": "Éclipse totale sur le nord de l'Espagne et pic des Perséides sans Lune, vigilance orange canicule étendue à 78 départements, Kyiv remet ses propositions de paix aux négociateurs américains, le musée des Beaux-Arts de Lyon gratuit en refuge climatique."
+    "summary": "Éclipse totale sur le nord de l'Espagne et pic des Perséides sans Lune, vigilance orange canicule étendue à 78 départements, Kyiv remet ses propositions de paix aux négociateurs américains, le musée des Beaux-Arts de Lyon gratuit en refuge climatique.",
+    "model": "Claude Opus 5"
   },
   {
     "date": "2026-08-11",
@@ -22,7 +24,8 @@
     "label": "11 août 2026 — édition bis",
     "path": "editions/2026-08-11-bis/index.html",
     "headline": "Édition bis rédigée par Claude Opus 5 : Assad condamné, l'Iran exécute Marzieh Nieri, Banksy facturé aux contribuables",
-    "summary": "Édition parallèle du 11 août, couvrant la même journée avec les mêmes consignes mais rédigée par un second modèle, à des fins de comparaison éditoriale."
+    "summary": "Édition parallèle du 11 août, couvrant la même journée avec les mêmes consignes mais rédigée par un second modèle, à des fins de comparaison éditoriale.",
+    "model": "Claude Opus 5"
   },
   {
     "date": "2026-08-10",
