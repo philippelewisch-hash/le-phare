@@ -103,11 +103,10 @@ Juste après `</nav>` (la nav du haut) sur ces mêmes 6 pages, conserver la barr
 </nav>
 ```
 
-Et dans le `<footer>` de ces 6 pages, juste après le paragraphe de transparence, conserver ces deux liens :
+**Ne pas mettre ces deux liens dans le `<footer>`** — sur mobile, la barre de navigation basse fixe (`.bottom-nav`) recouvre le bas du pied de page, qui n'a pas de marge réservée pour elle (seul `<main>` en a une), rendant ces liens inaccessibles au clic. C'est un bug corrigé le 15 août 2026 : ils doivent être placés dans le `<header class="masthead">`, juste après le dernier paragraphe de présentation (`.ai-note` sur `index.html`, `.baseline` sur les 5 autres pages), avant la fermeture du `<div class="wrap">` :
 
 ```html
-<p class="install-link"><a href="installer.html">Installer Le Phare sur votre téléphone</a></p>
-<p class="install-link"><a href="abonnement.html">Recevoir les annonces du Phare (offres, nouveautés)</a></p>
+<p class="install-link install-link-top"><a href="installer.html">Installer Le Phare sur votre téléphone</a> · <a href="abonnement.html">Recevoir les annonces du Phare</a></p>
 ```
 
 Ces éléments ne s'appliquent PAS aux pages archivées dans `editions/YYYY-MM-DD/` (elles restent de simples pages web, sans balises PWA).
