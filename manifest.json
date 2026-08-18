@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-08-18",
+    "path": "editions/2026-08-18/index.html",
+    "headline": "Nouvelle attaque de drones sur Moscou, l'entrepôt Wildberries touché une seconde fois",
+    "summary": "Plus de 600 drones ukrainiens visent de nouveau Moscou, Séoul rassure Pyongyang sur ses manœuvres avec Washington, Macron promet au Var les mêmes aides qu'en Gironde, les pompiers annoncent une mobilisation nationale fin septembre.",
+    "model": "Claude Sonnet 5"
+  },
+  {
     "date": "2026-08-17",
     "path": "editions/2026-08-17/index.html",
     "headline": "Un chasseur de l'OTAN abat un drone russe au-dessus de la Roumanie",
